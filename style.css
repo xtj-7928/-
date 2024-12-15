@@ -1,16 +1,141 @@
 body {
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-.header {
-	background: #f4f4f4;
-	border-bottom: #ccc 3px solid;
-	padding: 20px;
+.game-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
-.container {
-	width: 700px;
-	margin: 30px auto;
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+#guess-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#submit-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #45a049;
+}
+
+#feedback-container {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.feedback-box {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.feedback-box.green {
+    background-color: #6aaa64;
+    color: white;
+}
+
+.feedback-box.yellow {
+    background-color: #c9b458;
+    color: white;
+}
+
+.feedback-box.gray {
+    background-color: #787c7e;
+    color: white;
+}
+
+#keyboard-container {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.key {
+    padding: 15px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+}
+
+.key:hover {
+    background-color: #d0d0d0;
+}
+
+.key.enter {
+    background-color: #4caf50;
+    color: white;
+}
+
+.key.enter:hover {
+    background-color: #45a049;
+}
+
+.key.delete {
+    background-color: #ff6961;
+    color: white;
+}
+
+.key.delete:hover {
+    background-color: #e6454a;
+}
+
+#result-message {
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+}
+
+#scoreboard {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #555;
 }

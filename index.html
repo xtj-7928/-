@@ -3,18 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guessing Game</title>
     <link rel="stylesheet" href="style.css">
-    <title>Js Learning</title>
 </head>
 <body>
-    <div class="header">
-        <h1>Js Learning</h1>
-    </div>
+    <div class="game-container">
+        <h1>Word Guessing Game</h1>
+        <p>Guess the 5-letter word!</p>
 
-    <div class="container">
+        <!-- Input field for manual typing -->
+        <input type="text" id="guess-input" maxlength="5" placeholder="Enter your guess" />
 
+        <!-- Submit button for the input -->
+        <button id="submit-button">Submit</button>
+
+        <!-- Feedback display -->
+        <div id="feedback-container">
+            <!-- Feedback for guesses will be dynamically added here -->
+        </div>
+
+        <!-- Virtual keyboard -->
+        <div id="keyboard-container">
+            <!-- Virtual keyboard will be dynamically generated here -->
+        </div>
+
+        <!-- Results and scoreboard -->
+        <p id="result-message"></p>
+        <div id="scoreboard">Attempts: <span id="attempts">0</span></div>
     </div>
+    <script src="script.js"></script>
 </body>
-<script src="main.js"></script>
 </html>
-
